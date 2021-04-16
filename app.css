@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    
 }
 
 .grid-container{
@@ -14,15 +15,26 @@ body{
 
 header{
     grid-area: header;
-    background-color: plum;
-    display: inline-flex;
+    background-color: #8ca4f5;
+    display: flex;
+    justify-content: space-between;
+    color:white;
     
 }
+
+.endContainer{
+    
+    display: flex;
+    text-align: end;
+    margin-top: .75em;
+}
+
 
 
 header img{
     width: 35px;
     height: 35px;
+    margin-top: .6em;
     border-radius: 25px;
 }
 
