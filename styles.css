@@ -37,6 +37,25 @@ header h1{
 
 }
 
+nav{
+    background-color: #271642;
+    justify-content: center;
+    display: flex;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: 1.5em;
+    
+}
+
+nav svg{
+    height: 30px;
+    width: 30px;
+    fill: white;
+    align-content: space-between;
+    margin-left: 2em;
+    
+}
+
 .v1{
     border: .01em solid  white;
     height: 2em;
