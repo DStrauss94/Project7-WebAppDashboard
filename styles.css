@@ -48,11 +48,11 @@ nav{
 }
 
 nav svg{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     fill: white;
     align-content: space-between;
-    margin-left: 2em;
+    margin-left: 1.6em;
     
 }
 
@@ -91,6 +91,22 @@ nav svg{
     grid-area: main;
     display:grid;
 }
+.main-header{
+    display: flex;
+}
+.main-header-search{
+    
+}
+
+.main-header h2 {
+    font-size: large;
+    margin: 0;
+    padding-left: .5em;
+    padding-right: 1.5em;
+}
+
+
+
 
 .widget-container-full, .widget-container-half{
     width: 95vw;
