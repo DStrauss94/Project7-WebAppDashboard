@@ -41,8 +41,9 @@ header h1{
 }
 
 .circle{
-    margin-right: 2.5em;
-    margin-top: 1em;
+    display: flex;
+    margin-top: 1.2em;
+    margin-right: .5em;
 
 }
 #circle {
