@@ -50,3 +50,17 @@ let trafficData = {
             data: trafficData,
             options: trafficOptions
         });
+
+
+        const hourly = document.getElementById("hourly");
+
+        hourly.addEventListener('click', () => {
+            hourly.style.backgroundColor = "#95eb34";
+            hourly.style.borderRadius = "25px";
+            hourly.style.paddingLeft = "1em";
+            hourly.style.paddingRight = "1em";
+            trafficChart.data.dataSets;
+            trafficChart.update();
+
+
+        });
