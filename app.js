@@ -86,6 +86,7 @@ let trafficDataHourly = {
             hourly.style.borderRadius = "25px";
             hourly.style.paddingLeft = "1em";
             hourly.style.paddingRight = "1em";
+            //tried removeData here as well. 
             addData(trafficChart,trafficDataHourly.labels,trafficDataHourly.datasets.data);
             //removeData(trafficChart); tried using but no changes with data 
         });
