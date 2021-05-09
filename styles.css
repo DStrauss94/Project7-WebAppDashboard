@@ -180,6 +180,10 @@ nav svg{
     padding: 0 4em 0 1.5em;
 }
 
+.traffic-nav-link{
+    cursor: pointer;
+}
+
 
 
 .widget-container-full, .widget-container-half{

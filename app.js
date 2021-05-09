@@ -1,4 +1,4 @@
-//commit from Windows
+
 const alertBanner = document.getElementById("alert");
 const trafficCanvas = document.getElementById("traffic-chart");
 
@@ -28,6 +28,17 @@ let trafficData = {
             }]
         };
 
+let trafficDataHourly = {
+    labels: ["00-02", "03-05", "06-07", "08-09", "10-11", "12-13", "14-15",
+            "16-17", "18-19" , "20-21", "22-23"],
+            datasets: [{
+                data: [822, 2000, 506, 362, 1250, 676, 1654, 200
+                , 2500, 1506, 2856],
+                backgroundColor: 'rgba(116, 119, 191, .3)',
+                borderWidth: 1,
+            }]
+        };      
+
         let trafficOptions = {
             aspectRatio: 2.5,
             animation: {
@@ -51,6 +62,22 @@ let trafficData = {
             options: trafficOptions
         });
 
+       
+        function addData(chart, label, data) {
+            chart.data.labels.push(label);
+            chart.data.datasets.forEach((dataset) => {
+                dataset.data.push(data);
+            });
+            chart.update();
+        }
+        
+        function removeData(chart) {
+            chart.data.labels.pop();
+            chart.data.datasets.forEach((dataset) => {
+                dataset.data.pop();
+            });
+            chart.update();
+        }
 
         const hourly = document.getElementById("hourly");
 
@@ -59,8 +86,6 @@ let trafficData = {
             hourly.style.borderRadius = "25px";
             hourly.style.paddingLeft = "1em";
             hourly.style.paddingRight = "1em";
-            trafficChart.datasets.data;
-            trafficChart.update();
-
-
+            addData(trafficChart,trafficDataHourly.labels,trafficDataHourly.datasets.data);
+            //removeData(trafficChart); tried using but no changes with data 
         });
