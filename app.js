@@ -244,8 +244,9 @@ const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 
-send.addEventListener('click', () => {
+send.addEventListener('click', function(event) {
     //ensure user and message field are filled
+    event.preventDefault();
     if(user.value === "" && message.value === ""){
         alert("Please fill out user and message fields before sending");
     }
@@ -257,7 +258,10 @@ send.addEventListener('click', () => {
     }
     else{
         alert(`Message successfully sent to: ${user.value}`);
+        
     }
-});
+    
+},false);
+
 
 
