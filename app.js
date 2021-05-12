@@ -17,6 +17,8 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
+// TRAFFIC DATA ////////////////////////////////////////////////////////////////////////////
+
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
             "4-10", "11-7" , "18-24", "25-31"],
@@ -24,6 +26,7 @@ let trafficData = {
                 data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850
                 , 2250, 1500, 2500],
                 backgroundColor: 'rgba(116, 119, 191, .3)',
+                fill: true,
                 borderWidth: 1,
             }]
         };
@@ -35,6 +38,7 @@ let trafficDataHourly = {
                 data: [822, 2000, 506, 362, 1250, 676, 1654, 200
                 , 2500, 1506, 2856],
                 backgroundColor: 'rgba(116, 119, 191, .3)',
+                fill: true,
                 borderWidth: 1,
             }]
         };
@@ -45,6 +49,7 @@ let trafficDataDaily = {
                 data: [100, 2525, 1111, 2222, 457, 753, 1365, 2022
                 , 210, 322, 2485],
                 backgroundColor: 'rgba(116, 119, 191, .3)',
+                fill: true,
                 borderWidth: 1,
             }]
         };
@@ -56,6 +61,7 @@ let trafficDataWeekly = {
                 data: [822, 2000, 506, 362, 1250, 676, 1654, 200
                 , 2500, 1506, 2856],
                 backgroundColor: 'rgba(116, 119, 191, .3)',
+                fill: true,
                 borderWidth: 1,
             }]
         };
@@ -67,6 +73,7 @@ let trafficDataMonthly = {
                 data: [822, 2000, 506, 362, 1250, 676, 1654, 200
                 , 2500, 1506, 2856, 100],
                 backgroundColor: 'rgba(116, 119, 191, .3)',
+                fill: true,
                 borderWidth: 1,
             }]
         }; 
@@ -165,3 +172,92 @@ let trafficDataMonthly = {
 
             
         });
+
+// DAILY TRAFFIC ///////////////////////////////////////////////////////////////////////////////
+
+const dailyCanvas = document.getElementById("daily-chart");
+
+const dailyData = {
+    labels: ["S","M","T","W","T", "F","S"],
+    datasets: [{
+        label: '# of Hits',
+        data: [75,115,175,125,225,200,100],
+        backgroundColor: '#7477BF',
+        borderWidth: 1
+    }]
+};
+
+const dailyOptions = {
+    scales:{
+        y:{
+            beginAtZero: true
+        }
+    },
+    plugins: {
+        legend: {
+            display:false
+        }
+    }
+};
+
+let dailyChart = new Chart(dailyCanvas , {
+    type: 'bar',
+    data: dailyData,
+    options: dailyOptions
+});
+
+//MOBILE USERS /////////////////////////////////////////////////////////////////////////////////////////
+
+const mobileCanvas = document.getElementById("mobile-chart");
+
+const mobileData = {
+    labels: ["Desktop","Tablet","Phones"],
+    datasets: [{
+        label: '# of Users',
+        data: [2000, 500, 500],
+        backgroundColor: ['#7477BF', '#78CF82', '#51B6C8'],
+        borderWidth: 0
+    }]
+};
+
+const mobileOptions = {
+    plugins:{
+        legend:{
+            position: 'right',
+            labels: {
+                boxWidth: 20,
+                fontStyle: 'bold'
+            }
+        }
+    }
+};
+
+let mobileChart = new Chart(mobileCanvas , {
+    type: 'doughnut',
+    data: mobileData,
+    options: mobileOptions
+});
+
+//MESSAGING SECTION///////////////////////////////////////////////////////////////////////////////
+
+const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
+const send = document.getElementById("send");
+
+send.addEventListener('click', () => {
+    //ensure user and message field are filled
+    if(user.value === "" && message.value === ""){
+        alert("Please fill out user and message fields before sending");
+    }
+    else if(user.value === ""){
+        alert("Please fill out user field before sending");
+    }
+    else if(message.value === ""){
+        alert("Please fill out message field before sending");
+    }
+    else{
+        alert(`Message successfully sent to: ${user.value}`);
+    }
+});
+
+
