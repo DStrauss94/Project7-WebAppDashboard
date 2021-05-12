@@ -50,8 +50,8 @@ let trafficDataDaily = {
         };
         
 let trafficDataWeekly = {
-    labels: ["00-02", "03-05", "06-07", "08-09", "10-11", "12-13", "14-15",
-            "16-17", "18-19" , "20-21", "22-23"],
+    labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7",
+            "Week 8", "Week 9" , "Week 10", "Week 11"],
             datasets: [{
                 data: [822, 2000, 506, 362, 1250, 676, 1654, 200
                 , 2500, 1506, 2856],
@@ -107,6 +107,14 @@ let trafficDataMonthly = {
             lastestData.style.paddingLeft = 0;
             lastestData.style.paddingRight = 0;
           }
+
+          function trafficLinkGreen(label){
+            label.style.backgroundColor = "#95eb34";
+            label.style.borderRadius = "25px";
+            label.style.paddingLeft = "1em";
+            label.style.paddingRight = "1em";
+          }
+
         const hourly = document.getElementById("hourly");
         const daily = document.getElementById("daily");
         const weekly = document.getElementById("weekly");
@@ -119,10 +127,7 @@ let trafficDataMonthly = {
           if(lastestData != null){
             trafficLinkWhite();
           }
-            hourly.style.backgroundColor = "#95eb34";
-            hourly.style.borderRadius = "25px";
-            hourly.style.paddingLeft = "1em";
-            hourly.style.paddingRight = "1em";
+            trafficLinkGreen(hourly);
             updateChart(trafficChart, trafficDataHourly);
             lastestData = hourly;
           
@@ -133,10 +138,7 @@ let trafficDataMonthly = {
             if(lastestData != null){
                 trafficLinkWhite();
               }
-            daily.style.backgroundColor = "#95eb34";
-            daily.style.borderRadius = "25px";
-            daily.style.paddingLeft = "1em";
-            daily.style.paddingRight = "1em";
+            trafficLinkGreen(daily);
             updateChart(trafficChart, trafficDataDaily);
             lastestData = daily;
 
@@ -147,10 +149,7 @@ let trafficDataMonthly = {
                 trafficLinkWhite();
               }
 
-            weekly.style.backgroundColor = "#95eb34";
-            weekly.style.borderRadius = "25px";
-            weekly.style.paddingLeft = "1em";
-            weekly.style.paddingRight = "1em";
+            trafficLinkGreen(weekly);
             updateChart(trafficChart, trafficDataWeekly);
             lastestData = weekly;
 
@@ -160,12 +159,9 @@ let trafficDataMonthly = {
             if(lastestData != null){
                 trafficLinkWhite();
               }
-            monthly.style.backgroundColor = "#95eb34";
-            monthly.style.borderRadius = "25px";
-            monthly.style.paddingLeft = "1em";
-            monthly.style.paddingRight = "1em";
-            updateChart(trafficChart, trafficDataMonthly);
-            lastestData = monthly;
+              trafficLinkGreen(monthly);
+              updateChart(trafficChart, trafficDataMonthly);
+              lastestData = monthly;
 
             
         });
