@@ -165,6 +165,8 @@ nav svg{
 
 .traffic{
     margin-top: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 .traffic-header h3{
@@ -184,6 +186,17 @@ nav svg{
     cursor: pointer;
 }
 
+#daily-chart{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+.daily h3{
+    font-size: small;
+    font-weight: bold;
+    padding-left: 1.6em;
+}
 
 
 .widget-container-full, .widget-container-half{
@@ -191,32 +204,68 @@ nav svg{
 }
 
 /* MOBILE CHART CSS ///////////////////////*/
-#mobile-chart{
-    width: 50px;
-    height: 50px;
-}
 
 .chart-container{
-    position: relative; 
-    height:17vh; 
-    width:75vw;
+    display: relative;
+    height:100%; 
+    width:80%;
+    margin-left: 3em;
+}
+.mobileUsers h3 {
+    font-size: small;
+    font-weight: bold;
+    padding-left: 1.6em;
 }
 
-.social-image svg {
-    width: 50px ;
-    fill: #8ca4f5;
-}
+
 /* SOCIAL STATS CSS*/
+#social-stats{
+    font-size: small;
+    font-weight: bold;
+    padding-left: 1.6em;
+}
 
 .social-container{
     background-color: lightgray;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+
     
 }
-
 .social-wrapper{
     display: flex;
     margin-bottom: 1em;
 }
+
+.social-text{
+    margin-left: 1em;
+    color:#5f55b5 ;
+    font-weight: bold;
+}
+
+.social-text p{
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+#follows{
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-size: xx-large;
+    color: black;
+}
+
+.social-image svg {
+    width: 50px ;
+    fill: #5f55b5;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+/*NEW MEMBERS CSS//////////////////////////////////////////// */
+
+
 
 
 
