@@ -210,6 +210,7 @@ nav svg{
     height:100%; 
     width:80%;
     margin-left: 3em;
+   
 }
 .mobileUsers h3 {
     font-size: small;
@@ -230,6 +231,7 @@ nav svg{
     margin-left: 1em;
     margin-right: 1em;
     border-radius: 10px;
+    
 
     
 }
@@ -257,10 +259,22 @@ nav svg{
 }
 
 .social-image svg {
-    width: 50px ;
-    fill: #5f55b5;
+    width: 30px;
+    height: 30px;
+    fill: white;
+    margin-left:15px;
+    margin-top: 15px;
+    
+
+}
+
+.social-image{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: #5f55b5;
+    margin-top: .75em;
     margin-left: 1em;
-    margin-top: 1em;
 }
 
 /*NEW MEMBERS CSS//////////////////////////////////////////// */
