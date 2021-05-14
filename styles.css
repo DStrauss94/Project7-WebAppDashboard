@@ -353,8 +353,50 @@ nav svg{
     padding-left: 30%;
 }
 
+/* RECENT ACTIVITY CSS */
 
+#recentH3{
+    font-size: .9em;
+    margin: 0 0 0 1em;
+}
 
+#recentP{
+    text-align: center;
+    margin: 0 2em 0 2em;
+}
+
+#post-time{
+    text-align: center;
+}
+
+/* MESSAGE USER  */
+#messageH3{
+    margin: .5em 0 1em .8em;
+}
+
+#userField, #messageField{
+    width: 80%;
+    padding: .75em 0 .75em 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    background-color:lightgray;
+    border-radius: 5px;
+}
+
+#messageField{
+    padding-bottom: 6em;
+}
+
+.button-primary{
+    width: 84%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-top: .75em;
+    padding-bottom: 1em;
+    background-color:#5f55b5 ;
+    border-radius:  5px;
+    color:lightgray;
+}
 
 
 
