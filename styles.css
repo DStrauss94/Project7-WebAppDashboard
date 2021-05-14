@@ -1,3 +1,6 @@
+/* MAIN CSS  */
+
+
 body{
     margin: 0;
     
@@ -13,9 +16,16 @@ body{
         "main";
 }
 
+.grayLine{
+    border-top: 2px solid lightgray;
+    margin-top: 1em;
+}
+
+
+/* HEADER CSS */
 header{
     grid-area: header;
-    background-color: #8ca4f5;
+    background-color: #5f55b5;
     display: flex;
     justify-content: space-between;
     color:white;
@@ -28,6 +38,8 @@ header h1{
     font-weight: lighter;
     margin-top: 1.1em;
 }
+
+
 
 .bell{
     padding-left: 1em;
@@ -127,9 +139,12 @@ nav svg{
     padding-top: .9em;
     padding-left: 1em;
     padding-bottom: .9em;
-
-    
 }
+
+.main-header-search input{
+    width: 90%;
+}
+
 
 .background-search{
     background-color: #ededed;
@@ -142,9 +157,9 @@ nav svg{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #8ca4f5;
+    background-color: #5f55b5;
     width: 80%;
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 1.5em;
     margin-top: 1.5em;
     height: 3em;
@@ -162,6 +177,7 @@ nav svg{
     
     
 }
+/* TRAFFIC CSS */
 
 .traffic{
     margin-top: 2em;
@@ -278,6 +294,66 @@ nav svg{
 }
 
 /*NEW MEMBERS CSS//////////////////////////////////////////// */
+#new-member-line{
+    margin: 0;
+}
+
+#newMembers{
+    margin-top: 0;
+    margin-left: .75em;
+    margin-bottom: 0;
+}
+
+.profit-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+   
+
+}
+
+.members-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px ;
+    
+
+}
+
+.members-container a{
+    text-decoration: none;
+    color: gray;
+}
+
+#vChambers{
+   padding-left: 25%;
+   margin:0;
+  
+}
+
+.members-text p {
+    margin: 0;
+}
+
+#date{
+    margin: 0;
+}
+
+#dByrd{
+    padding-left: 30%;
+}
+
+#dWood{
+    padding-left: 30%;
+}
+
+#dOliver{
+    padding-left: 30%;
+}
+
+
 
 
 
