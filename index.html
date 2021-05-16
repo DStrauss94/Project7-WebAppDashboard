@@ -260,16 +260,36 @@
                 </section>
 
                 <section class="settings">
-                    <h3>settings</h3>
+                    <h3>SETTINGS</h3>
                     <!--custom CSS Toggle Code-->
+                    <div class="toggle">
+                        <h4>Send Email Notifications</h2>
+                        <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
 
+                    <div class="toggle">
+                        <h4>Set Profile to Public</h2>
+                        <label class="switch" id="switch2">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
                     <!--custom CSS Toggle Code-->
 
                     <select class="form-field" id="timezone">
-                        <option disabled selected>Select a Timezone</option>
-                        <option>Eastern</option>
+                        <option disabled selected id="timezonelabel">Select Timezone</option>
+                        <option>Pacific(PST)</option>
+                        <option>Mountain(MST)</option>
+                        <option>Central(CST)</option>
+                        <option>Eastern(EST)</option>
+                        <option>Atlantic(AST)</option>
 
                     </select>
+                    
+
                     <div class="settings-button">
                         <button class="button-primary" id="save">Save</button>
                         <button class="button-disabled" id="cancel">Cancel</button>
