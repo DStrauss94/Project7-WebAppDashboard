@@ -177,6 +177,11 @@ nav svg{
     
     
 }
+
+.bell svg:hover{
+    width: 25px;
+    height: 25px;
+}
 /* TRAFFIC CSS */
 
 .traffic{
@@ -200,6 +205,8 @@ nav svg{
 
 .traffic-nav-link{
     cursor: pointer;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 #daily-chart{

@@ -111,15 +111,15 @@ let trafficDataMonthly = {
           function trafficLinkWhite(){
             lastestData.style.backgroundColor = "white";
             lastestData.style.borderRadius = 0;
-            lastestData.style.paddingLeft = 0;
-            lastestData.style.paddingRight = 0;
+            // lastestData.style.paddingLeft = 0;
+            // lastestData.style.paddingRight = 0;
           }
 
           function trafficLinkGreen(label){
             label.style.backgroundColor = "#95eb34";
             label.style.borderRadius = "25px";
-            label.style.paddingLeft = "1em";
-            label.style.paddingRight = "1em";
+            // label.style.paddingLeft = "1em";
+            // label.style.paddingRight = "1em";
           }
 
         const hourly = document.getElementById("hourly");
