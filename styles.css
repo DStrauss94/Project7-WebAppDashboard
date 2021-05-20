@@ -489,7 +489,7 @@ nav svg{
 
 @media(min-width:768px){
     .grid-container{
-        grid-template-columns: 55px 1fr;
+        grid-template-columns: 75px 1fr;
         grid-template-areas:
             "header header"
             "navigation main";
@@ -497,8 +497,22 @@ nav svg{
 
 
 
-    .main{
-        grid-template-columns: 50%;
+    main{
+        grid-template-columns: 40%;
+        
+    }
+
+    nav{
+        
+        display: block;
+        width: 3em;
+    }
+
+    nav svg{
+        height: 35px;
+        width: 35px;
+        margin-top: 1.5em;
+        margin-left: 1.2em;
     }
 
     .traffic,.social{
@@ -520,4 +534,8 @@ nav svg{
     .widget-container-half{
         width: 45%;
     }
+
+
+
+
 }
