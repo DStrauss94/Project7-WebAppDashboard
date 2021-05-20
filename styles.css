@@ -495,6 +495,24 @@ nav svg{
             "navigation main";
     }
 
+    header{
+        justify-content: right;
+        
+    }
+    .bell{
+        margin-left: 60%;
+    }
+    .v1{
+        margin-left: 1em;
+    }
+
+    .endContainer{
+        margin-left: 1em;
+    }
+
+
+
+
 
 
     main{
