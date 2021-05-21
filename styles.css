@@ -489,7 +489,7 @@ nav svg{
 
 @media(min-width:768px){
     .grid-container{
-        grid-template-columns: 75px 1fr;
+        grid-template-columns: 75px 2fr;
         grid-template-areas:
             "header header"
             "navigation main";
@@ -522,7 +522,8 @@ nav svg{
 
 
     main{
-        grid-template-columns: 40%;
+        grid-template-columns: 98%;
+        display: grid;
         
     }
 
@@ -531,6 +532,8 @@ nav svg{
         display: block;
         width: 3em;
     }
+
+    
 
     nav svg{
         height: 35px;
@@ -544,11 +547,11 @@ nav svg{
     }
 
     .daily, .members, .message{
-        grid-column:1/1; 
+        grid-column:1 span / 2 span; 
     }
 
     .mobile, .activity, .settings{
-        grid-column: 2/3; 
+        grid-column: 2/ span 1; 
     }
 
     .widget-container-full{
@@ -559,7 +562,19 @@ nav svg{
         width: 45%;
     }
 
+    .all-social-containers{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
 
+    .social-container{
+        width: 30%;
+        margin-left: 1em;
+        margin-right: 0;
+        
+    }
+    }
 
 
 }

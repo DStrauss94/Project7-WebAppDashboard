@@ -265,16 +265,16 @@ send.addEventListener('click', function(event) {
 
 
 
-const removeLine1 = document.getElementById("above-mobile-user");
-const pixels = 768;
+// const removeLine1 = document.getElementById("above-mobile-user");
+// const pixels = 768;
 
-if(screen.width >= pixels){
-    removeLine1.remove();
-}
+// if(screen.width >= pixels){
+//     removeLine1.remove();
+// }
 
-if(screen.width < pixels){
-    let tag = document.createElement("div");
-    tag.classList.add("grayLine");
-    removeLine1.appendChild(tag);
+// if(screen.width < pixels){
+//     let tag = document.createElement("div");
+//     tag.classList.add("grayLine");
+//     removeLine1.appendChild(tag);
 
-}
+// }
