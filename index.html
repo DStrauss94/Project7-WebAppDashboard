@@ -69,13 +69,16 @@
                     </div>
                     <section class="traffic" id="traffic">
                         <div class="traffic-header">
-                            <h3>TRAFFIC</h3>
-                            <ul class="traffic-nav">
-                                <li class="traffic-nav-link" id="hourly">Hourly</li>
-                                <li class="traffic-nav-link"id="daily">Daily</li>
-                                <li class="traffic-nav-link"id="weekly">Weekly</li>
-                                <li class="traffic-nav-link"id="monthly">Monthly</li>
-                            </ul>
+                            <div class="traffic-label">
+                                <h3>TRAFFIC</h3>
+                                <ul class="traffic-nav">
+                                    <li class="traffic-nav-link" id="hourly">Hourly</li>
+                                    <li class="traffic-nav-link"id="daily">Daily</li>
+                                    <li class="traffic-nav-link"id="weekly">Weekly</li>
+                                    <li class="traffic-nav-link"id="monthly">Monthly</li>
+                                </ul>
+                            </div>
+                            
                             <div class="widget-container-fully">
                                 <!-- element line graph will attach to -->
                                 <canvas id="traffic-chart"></canvas>
@@ -84,26 +87,30 @@
                     </section>
                     <div class="grayLine"></div>
                     <section class="daily">
-                        <h3>Daily Traffic</h3>
+                        
                         <div class="widget-container-half">
                             <!-- element bar graph will attach to-->
-                            <canvas id="daily-chart"></canvas>
+                            <div class="daily-chart">
+                                <h3>DAILY TRAFFIC</h3>
+                                <canvas id="daily-chart"></canvas>
+                                <div class="grayLine" id="above-mobile-user"></div>
+                            </div>
+                            
+
+                            <div class="mobileUsers">
+                                <h3>MOBILE USERS</h3>
+                                <div class="chart-container">
+                                    <canvas id="mobile-chart"></canvas>
+                                </div>
+                            </div>
                         </div>
                     </section>
-                    <div class="grayLine" id="above-mobile-user"></div>
-
-                    <div class="mobileUsers">
-                        <h3>MOBILE USERS</h3>
-                        <div class="chart-container">
-                            <canvas id="mobile-chart"></canvas>
-                        </div>
-
-                    </div>
+                    
                     <div class="grayLine" ></div>
 
                     <h3 id="social-stats">SOCIAL STATS</h3>
                     
-                    <div class="all-social-cotainers">
+                    <div class="all-social-containers">
                         <div class="social-container">
                             <div class="social-wrapper">
                                 <div class="social-image">

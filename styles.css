@@ -488,93 +488,147 @@ nav svg{
 
 
 @media(min-width:768px){
-    .grid-container{
-        grid-template-columns: 75px 2fr;
-        grid-template-areas:
-            "header header"
-            "navigation main";
-    }
+        .grid-container{
+            grid-template-columns: 75px 2fr;
+            grid-template-areas:
+                "header header"
+                "navigation main";
+        }
 
-    /* Header///////////////////////////////// */
+        /* Header///////////////////////////////// */
 
-    header{
-        justify-content: right;
+        header{
+            justify-content: right;
+            
+        }
+        .bell{
+            margin-left: 60%;
+        }
+        .v1{
+            margin-left: 1em;
+        }
+
+        .endContainer{
+            margin-left: 1em;
+        }
+
+        /* Alert Banner */
+
+        .alert-banner{
+            width:90%;
+        }
+
+
+
+
+        main{
+            grid-template-columns: 50%;
+            
+        }
+
+        nav{
+            
+            display: block;
+            width: 3em;
+        }
+
         
-    }
-    .bell{
-        margin-left: 60%;
-    }
-    .v1{
-        margin-left: 1em;
-    }
 
-    .endContainer{
-        margin-left: 1em;
-    }
+        nav svg{
+            height: 35px;
+            width: 35px;
+            margin-top: 1.5em;
+            margin-left: 1.2em;
+        }
 
-    /* Alert Banner */
+        .traffic,.social{
+            grid-column: 1/ span 2;
+        }
 
-    .alert-banner{
-        width:90%;
-    }
+        .daily, .members, .message{
+            grid-column: 1  / 2 span; 
+        }
 
+        .mobile, .activity, .settings{
+            grid-column: 2/ span 1; 
+        }
 
+        .widget-container-full{
+            width: 90vw;
+        }
 
+     
 
-    main{
-        grid-template-columns: 98%;
-        display: grid;
+        .all-social-containers{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .social-container{
+            width: 30%;
+            margin-left: 1em;
+            margin-right: 0;
+            
+        }
+
+        .traffic{
+            margin-top: 0;
+        }
+
+        .traffic-label{
+            display: flex;
+            position: center;
+            
+        }
+
+        .traffic-label h3{
+            margin-top: 1.3em;
+        }
+
+        .traffic-nav{
+            position: absolute;
+            padding: 0 0 0 55%;
+        }
+
+        .daily h3{
+            margin: 0;
+            margin-bottom: 4em;
+            margin-top: 3em;
+            
+        }
+
+         
+
+        .widget-container-half{
+           display: flex;
+           width:100%;
+        }
+
+        .mobileUsers h3{
+            margin-bottom: 0;
+        }
+
         
-    }
+        .chart-container{
+            width: 85%;
+        }
 
-    nav{
-        
-        display: block;
-        width: 3em;
-    }
+        #above-mobile-user{
+            border-top: #ccc;
+        }
 
-    
+        .all-social-containers{
+            display: flex;
+            
+        }
+        .social-container{
+            margin-right: 0;
+        }
 
-    nav svg{
-        height: 35px;
-        width: 35px;
-        margin-top: 1.5em;
-        margin-left: 1.2em;
-    }
 
-    .traffic,.social{
-        grid-column: 1/2;
-    }
 
-    .daily, .members, .message{
-        grid-column:1 span / 2 span; 
-    }
-
-    .mobile, .activity, .settings{
-        grid-column: 2/ span 1; 
-    }
-
-    .widget-container-full{
-        width: 90vw;
-    }
-
-    .widget-container-half{
-        width: 45%;
-    }
-
-    .all-social-containers{
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-    }
-
-    .social-container{
-        width: 30%;
-        margin-left: 1em;
-        margin-right: 0;
-        
-    }
     }
 
 
-}
+
