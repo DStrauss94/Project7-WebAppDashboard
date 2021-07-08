@@ -1,5 +1,7 @@
 /* MAIN CSS  */
-
+canvas{
+    max-width: 100%;
+}
 
 body{
     margin: 0;
@@ -568,15 +570,18 @@ nav svg{
         }
 
         .widget-container-full{
-            width: 90vw;
+            width: 85vw;
         }
 
         .mobile-chart-wrapper{
-            width: 45vw;
+            width: 40vw;
+            padding-left: 2em;
         }
 
         .daily-chart-wrapper{
-            width: 45vw;
+            width: 40vw;
+            padding-top: 2em;
+            
         }
 
      
@@ -613,13 +618,10 @@ nav svg{
             padding: 0 0 0 55%;
         }
 
-        .daily{
-        }
+        
 
-        .daily h3{
-            margin: 0;
-            margin-bottom: 4em;
-            margin-top: 3em;
+        .widget-container-half .mobileUsers h3{
+            margin: 1em 0 2em 0;
             
         }
 
@@ -627,7 +629,8 @@ nav svg{
 
         .widget-container-half{
            display: flex;
-           width:100%;
+           
+
         }
 
         .mobileUsers h3{
@@ -640,7 +643,9 @@ nav svg{
         }
 
         #above-mobile-user{
-            border-top: #ccc;
+            transform: rotate(180deg);
+            
+            
         }
 
         .all-social-containers{
