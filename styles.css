@@ -3,6 +3,10 @@ canvas{
     max-width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+  }
+
 body{
     margin: 0;
     
@@ -545,7 +549,7 @@ nav svg{
         nav{
             
             display: block;
-            width: 3em;
+            
         }
 
         
@@ -570,16 +574,16 @@ nav svg{
         }
 
         .widget-container-full{
-            width: 85vw;
+            width: 100%;
         }
 
         .mobile-chart-wrapper{
-            width: 40vw;
+            width: 45vw;
             padding-left: 2em;
         }
 
         .daily-chart-wrapper{
-            width: 40vw;
+            width: 45vw;
             padding-top: 2em;
             
         }
@@ -656,6 +660,20 @@ nav svg{
             margin-right: 0;
         }
 
+        .social-text .follows{
+            margin: 0;
+        }
+
+        .members-container{
+            flex-direction: row;
+            justify-content: left;
+        }
+
+        .members-text p{
+            text-align: left;
+        }
+        .date{
+        }
 
 
     }
