@@ -222,7 +222,15 @@ nav svg{
 }
 
 
-.widget-container-full, .widget-container-half{
+/* .widget-container-full, .widget-container-half{
+    width: 95vw;
+} */
+
+.mobile-chart-wrapper{
+    width: 95vw;
+}
+
+.daily-chart-wrapper{
     width: 95vw;
 }
 
@@ -311,7 +319,7 @@ nav svg{
     margin-bottom: 0;
 }
 
-.profit-image{
+.profile-image{
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -340,7 +348,7 @@ nav svg{
     text-align: center;
 }
 
-#date{
+.date{
     margin: 0;
 }
 
@@ -441,10 +449,16 @@ nav svg{
     -webkit-transition: .4s;
     transition: .4s;
   }
-  .slider.round h4{
+  .slider.round .on-text{
       color: #ccc;
       margin: .4em 0 0 .5em;
+      display: block;
+      
   }
+
+  /* span .on-text{
+    margin-top: 3em;
+  } */
   
   input:checked + .slider {
     background-color: #5f55b5;
@@ -557,6 +571,14 @@ nav svg{
             width: 90vw;
         }
 
+        .mobile-chart-wrapper{
+            width: 45vw;
+        }
+
+        .daily-chart-wrapper{
+            width: 45vw;
+        }
+
      
 
         .all-social-containers{
@@ -589,6 +611,9 @@ nav svg{
         .traffic-nav{
             position: absolute;
             padding: 0 0 0 55%;
+        }
+
+        .daily{
         }
 
         .daily h3{
