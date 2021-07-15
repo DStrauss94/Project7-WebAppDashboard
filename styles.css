@@ -339,6 +339,8 @@ nav svg{
     align-items: center;
     flex-direction: column;
     height: 150px ;
+    flex: 100%;
+    
     
 
 }
@@ -636,10 +638,10 @@ nav svg{
            
 
         }
-
+/* 
         .mobileUsers h3{
             margin-bottom: 0;
-        }
+        } */
 
         
         .chart-container{
@@ -647,10 +649,16 @@ nav svg{
         }
 
         #above-mobile-user{
-            transform: rotate(180deg);
-            
-            
+            border-left: 2px solid lightgrey; 
+            margin-top:0;
         }
+
+
+        #social-stats-line{
+            margin: 0;
+        }
+
+     
 
         .all-social-containers{
             display: flex;
@@ -672,9 +680,7 @@ nav svg{
         .members-text p{
             text-align: left;
         }
-        .date{
-        }
-
+       
 
     }
 
