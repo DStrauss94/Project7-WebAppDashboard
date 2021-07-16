@@ -582,11 +582,13 @@ nav svg{
         .mobile-chart-wrapper{
             width: 45vw;
             padding-left: 2em;
+            margin-bottom: 1em;
         }
 
         .daily-chart-wrapper{
             width: 45vw;
             padding-top: 2em;
+            margin-bottom: 1em;
             
         }
 
@@ -675,11 +677,39 @@ nav svg{
         .members-container{
             flex-direction: row;
             justify-content: left;
+            
         }
 
+        .members-text{
+            margin-left: 1em;
+        }
         .members-text p{
             text-align: left;
+            
         }
+        
+        .date{
+            position: absolute;
+            right: 0;
+            margin-right: 1em;
+        }
+        .profile-image{
+            margin-left: 1em;
+        }
+
+        #userField{
+            width: 95%;
+        }
+
+        #messageField{
+            width: 95%;
+        }
+
+        .button-primary{
+            width: 95%;
+        }
+
+
        
 
     }
