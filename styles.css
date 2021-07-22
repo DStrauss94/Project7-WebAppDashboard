@@ -677,6 +677,7 @@ nav svg{
         .members-container{
             flex-direction: row;
             justify-content: left;
+            height: 75px;
             
         }
 
@@ -717,7 +718,34 @@ nav svg{
             width: 97%;
         }
 
-       
+        .members-container a {
+            color: #5f55b5;
+        }
+
+        .arrow{
+            border: solid gray;
+            border-width: 0px 3px 3px 0;
+            display: inline-block;
+            padding: 4px;
+            margin-right: 1em;
+            position: absolute;
+            right: 0;
+        }
+
+        .right{
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        #userField, #timezone{
+            padding: 1em 0 1em 1em;
+        }
+
+        @media(min-width:1024px){
+            .bell{
+                margin-left: 70%;
+            }
+        }
 
     }
 
