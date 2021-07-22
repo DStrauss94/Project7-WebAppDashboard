@@ -745,6 +745,15 @@ nav svg{
             .bell{
                 margin-left: 70%;
             }
+            
+
+            .members-container .grayLine .new-member-line .form-field{
+                flex-basis: 50%;
+            }
+
+           
+
+
         }
 
     }
