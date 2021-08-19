@@ -167,7 +167,7 @@
                     
                    ​<div class="grayLine new-member-line" id="first-member-line"></div>
 
-                       
+                <div class="members">
                    <div class="new-members-container">
                     ​<h3 id="newMembers">New Members</h3>
 
@@ -188,7 +188,7 @@
                             <p id="dByrd">Dale Byrd</p>
                             <a href="#">dale.byrd52@example.com</a>
                         </div>
-                        <p class="date">10/15/20</p>
+                        <p class="date" id="db">10/15/20</p>
                     </div>
                     
                     <div class="grayLine new-member-line"></div>
@@ -198,7 +198,7 @@
                             <p id="dWood">Dawn Wood</p>
                             <a href="#">dawn.wood16@example.com</a>
                         </div>
-                        <p class="date">10/15/20</p>
+                        <p class="date" id="dw">10/15/20</p>
                     </div>
                    
                         
@@ -211,14 +211,17 @@
                             <p id="dOliver">Dan Oliver</p>
                             <a href="#">dan.oliver82@example.com</a>
                         </div>
-                        <p class="date">10/15/20</p>
+                        <p class="date" id="do">10/15/20</p>
                     </div>
-                    <div class="grayLine new-member-line"></div>
+                    <div class="grayLine last-new-member-line"></div>
 
                 </div>
 
+                    <div class="vertical-line"></div>
+
                     <!--RECENT ACTIVITY  -->
-                   
+                   <div class="recent-activity">
+
                     ​<h3 id="recentH3">RECENT ACTIVITY</h3>
 
                     <div class="members-container">
@@ -230,7 +233,7 @@
                         <i class="arrow right"></i>
                         
                     </div>
-                    <div class="grayLine new-member-line"></div>
+                    <div class="grayLine recent-activity-line"></div>
                     <div class="members-container">
                         
                         <img src="./images/member-2.jpg" class="profile-image" alt="Dale-Byrd">
@@ -241,7 +244,7 @@
                         <i class="arrow right"></i>
                     </div>
                     
-                    <div class="grayLine new-member-line"></div>
+                    <div class="grayLine recent-activity-line"></div>
                     <div class="members-container">
                         <img src="./images/member-3.jpg" class="profile-image" alt="Dawn-Wood">
                         <div class="members-text">
@@ -254,7 +257,7 @@
                     </div>
                    
                         
-                    <div class="grayLine new-member-line"></div>
+                    <div class="grayLine recent-activity-line"></div>
 
                     <div class="members-container">
                         
@@ -266,63 +269,65 @@
                         <i class="arrow right"></i>
                         
                     </div>
-                    <div class="grayLine new-member-line"></div>
+                    <div class="grayLine last-new-member-line"></div>
+                </div>
+            </div>
                 
-
-                
-                
-
-                <!--Messaging Widget-->
-                <section class="message">
-                    <h3 id="messageH3">Message User</h3>
-
-                    <form class="widget-container">
-                        <input type="text" placeholder="Search for user" class="form-field" id="userField">
-                        <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
-                        <button class="button-primary" id="send">Send</button>
-                    </form>
-                </section>
-
-                <section class="settings" id="settings">
-                    <h3>SETTINGS</h3>
-                    <!--custom CSS Toggle Code-->
-                    <div class="toggle">
-                        <h4>Send Email Notifications</h4>
-                        <label class="switch">
-                            <input type="checkbox" checked >
-                            <span class="slider round">
-                                <span class="on-text">ON</span>
-                            </span>
-                        </label>
-                    </div>
-
-                    <div class="toggle">
-                        <h4>Set Profile to Public</h4>
-                        <label class="switch" id="switch2">
-                            <input type="checkbox" checked >
-                            <span class="slider round">
-                                <span class="on-text">ON</span>
-                            </span>
-                        </label>
-                    </div>
-                    <!--custom CSS Toggle Code-->
-
-                    <select class="form-field" id="timezone">
-                        <option disabled selected id="timezonelabel">Select Timezone</option>
-                        <option>Pacific(PST)</option>
-                        <option>Mountain(MST)</option>
-                        <option>Central(CST)</option>
-                        <option>Eastern(EST)</option>
-                        <option>Atlantic(AST)</option>
-
-                    </select>
+                <div class="last-section">
                     
+                    <!--Messaging Widget-->
+                    <section class="message">
+                        <h3 id="messageH3">Message User</h3>
 
-                    <div class="settings-button">
-                        <button class="button-primary" id="save">Save</button>
-                        <button class="button-disabled" id="cancel">Cancel</button>
-                    </div>
-                </section>
+                        <form class="widget-container">
+                            <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                            <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+                            <button class="button-primary" id="send">Send</button>
+                        </form>
+                    </section>
+
+                    <section class="settings" id="settings">
+                        <h3>SETTINGS</h3>
+                        <!--custom CSS Toggle Code-->
+                        <div class="toggle">
+                            <h4>Send Email Notifications</h4>
+                            <label class="switch">
+                                <input type="checkbox" checked >
+                                <span class="slider round">
+                                    <span class="on-text">ON</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="toggle">
+                            <h4>Set Profile to Public</h4>
+                            <label class="switch" id="switch2">
+                                <input type="checkbox" checked >
+                                <span class="slider round">
+                                    <span class="on-text">ON</span>
+                                </span>
+                            </label>
+                        </div>
+                        <!--custom CSS Toggle Code-->
+
+                        <select class="form-field" id="timezone">
+                            <option disabled selected id="timezonelabel">Select Timezone</option>
+                            <option>Pacific(PST)</option>
+                            <option>Mountain(MST)</option>
+                            <option>Central(CST)</option>
+                            <option>Eastern(EST)</option>
+                            <option>Atlantic(AST)</option>
+
+                        </select>
+                        
+
+                        <div class="settings-button">
+                            <button class="button-primary" id="save">Save</button>
+                            <button class="button-disabled" id="cancel">Cancel</button>
+                        </div>
+                    </section>
+                </div>
+
 
 
 

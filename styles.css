@@ -746,14 +746,78 @@ nav svg{
                 margin-left: 70%;
             }
             
+            .members{
+                display: flex;
+            }
 
-            .members-container .grayLine .new-member-line .form-field{
+            .new-members-container .recent-activity .settings .message{
                 flex-basis: 50%;
             }
+         
 
             #first-member-line{
                 margin-top: 0;
             }
+
+            #recentH3{
+                margin-top: .35em;
+            }
+
+            .date{
+                position: unset;
+                
+            }
+
+            .new-member-line{
+                margin-top: .5em;
+                margin-right: 1em;
+            }
+
+            .last-new-member-line{
+                margin-top: .5em;
+                margin-right: 0;
+
+            }
+
+            .vertical-line{
+                
+            }
+
+            .recent-activity-line{
+                margin-top: .5em;
+                margin-left: 1em;
+            }
+
+            .new-members-container{
+                
+            }
+
+            .members-container{
+                
+            }
+            .date{
+                padding-left: 4em;
+            }
+
+            #db{
+                padding-left: 7.3em;
+            }
+            #dw{
+                padding-left: 6.3em;
+            }
+            #do{
+                padding-left: 6.7em;
+            }
+
+            .vertical-line{
+                border-left: 2px solid lightgray;
+                
+            }
+            .members-text{
+                margin-right: 2em;
+            }
+
+          
            
 
 
