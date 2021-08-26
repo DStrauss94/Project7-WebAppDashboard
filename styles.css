@@ -653,6 +653,7 @@ nav svg{
         #above-mobile-user{
             border-left: 2px solid lightgrey; 
             margin-top:0;
+            margin-left: 2.0em;
         }
 
 
@@ -746,9 +747,16 @@ nav svg{
                 margin-left: 70%;
             }
             
-            .members{
+            .members, .last-section{
                 display: flex;
+                
             }
+
+            .last-section{
+                width: 100%;
+            }
+
+           
 
             .new-members-container .recent-activity .settings .message{
                 flex-basis: 50%;
@@ -760,8 +768,13 @@ nav svg{
             }
 
             #recentH3{
-                margin-top: .35em;
+                margin: .35em 0 0 0;
+                
             }
+
+            /* .profile-image{
+                margin-left: 0;
+            } */
 
             .date{
                 position: unset;
@@ -775,12 +788,7 @@ nav svg{
 
             .last-new-member-line{
                 margin-top: .5em;
-                margin-right: 0;
 
-            }
-
-            .vertical-line{
-                
             }
 
             .recent-activity-line{
@@ -797,6 +805,7 @@ nav svg{
             }
             .date{
                 padding-left: 4em;
+                margin: 0;
             }
 
             #db{
@@ -809,13 +818,51 @@ nav svg{
                 padding-left: 6.7em;
             }
 
+            .members > .members-container , .recent-activity{
+                width: 50%;
+                flex-shrink: 0 ;
+            }
+
+            .last-section > .message , .settings{
+                width: 50%;
+                flex-shrink: 0 ;
+            }
+
+
+
             .vertical-line{
                 border-left: 2px solid lightgray;
                 
             }
+
             .members-text{
                 margin-right: 2em;
             }
+
+            #userField , #messageField{
+                width: 95%;
+
+            }
+
+
+
+            canvas{
+                max-width: 98%;
+            }
+
+           #messageH3, #settings-h3{
+               margin: 0;
+               
+           }
+
+           #messageH3{
+               
+               
+           }
+
+
+
+            
 
           
            
