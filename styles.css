@@ -796,13 +796,6 @@ nav svg{
                 margin-left: 1em;
             }
 
-            .new-members-container{
-                
-            }
-
-            .members-container{
-                
-            }
             .date{
                 padding-left: 4em;
                 margin: 0;
@@ -818,14 +811,45 @@ nav svg{
                 padding-left: 6.7em;
             }
 
-            .members > .members-container , .recent-activity{
+            /* .bottom-section{
+                border: 2px solid lightgray;
+
+            } */
+
+            .all-social-containers{
+                margin-bottom: 1em;
+            }
+
+            .members >  .members-container , .recent-activity{
                 width: 50%;
                 flex-shrink: 0 ;
             }
 
+            .members{
+                border: 2px solid lightgray;
+            }
+
+            .new-members-container{
+                border-bottom: 0px;
+            }
+
+            .recent-activity{
+                border: 2px solid lightgray;
+                border-top: 0px;
+                border-bottom: 0px;
+                border-right: 0px;
+            }
+
+                  
+
             .last-section > .message , .settings{
                 width: 50%;
                 flex-shrink: 0 ;
+            }
+
+            .message{
+                border: 2px solid lightgray;
+                border-top: 0px;
             }
 
 
@@ -841,36 +865,30 @@ nav svg{
 
             #userField , #messageField{
                 width: 95%;
-
             }
-
-
 
             canvas{
                 max-width: 98%;
             }
 
-           #messageH3, #settings-h3{
-               margin: 0;
-               
-           }
+            .both-toggles{
+                margin-bottom: 1.1em;
+            }
 
-           #messageH3{
-               
-               
-           }
+            #timezone{
+                width: 90%;
+            }
 
+            .settings-button{
+                margin-right: 0;
+            }
 
-
-            
-
-          
-           
-
-
-        }
+            .button-primary, #cancel{
+                width: 45%;
+            }
 
     }
+}
 
 
 
