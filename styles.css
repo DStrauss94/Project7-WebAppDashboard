@@ -741,7 +741,7 @@ nav svg{
         #userField, #timezone{
             padding: 1em 0 1em 1em;
         }
-
+    }
         @media(min-width:1024px){
             .bell{
                 margin-left: 70%;
@@ -756,9 +756,20 @@ nav svg{
                 width: 100%;
             }
 
+            .daily-chart{
+                border-right: 2px solid lightgray;
+            }
+            
+            .daily-chart , .mobileUsers{
+                flex-basis: 50%;
+            }
+
+            .new-members-container{
+                width: 0;
+            }
            
 
-            .new-members-container .recent-activity .settings .message{
+            .new-members-container, .recent-activity, .settings, .message{
                 flex-basis: 50%;
             }
          
@@ -768,7 +779,7 @@ nav svg{
             }
 
             #recentH3{
-                margin: .35em 0 0 0;
+                /* margin: .35em 0 0 0; */
                 
             }
 
@@ -796,12 +807,12 @@ nav svg{
                 margin-left: 1em;
             }
 
-            .date{
-                padding-left: 4em;
+            p.date{
                 margin: 0;
+                text-align: right;
             }
 
-            #db{
+            /* #db{
                 padding-left: 7.3em;
             }
             #dw{
@@ -809,7 +820,7 @@ nav svg{
             }
             #do{
                 padding-left: 6.7em;
-            }
+            } */
 
             /* .bottom-section{
                 border: 2px solid lightgray;
@@ -826,18 +837,19 @@ nav svg{
             }
 
             .members{
-                border: 2px solid lightgray;
+                border-bottom: 2px solid lightgray;
             }
 
             .new-members-container{
-                border-bottom: 0px;
+                border-right: 2px solid lightgray;
+
             }
 
             .recent-activity{
-                border: 2px solid lightgray;
+                /* border: 2px solid lightgray;
                 border-top: 0px;
                 border-bottom: 0px;
-                border-right: 0px;
+                border-right: 0px; */
             }
 
                   
@@ -848,13 +860,14 @@ nav svg{
             }
 
             .message{
-                border: 2px solid lightgray;
-                border-top: 0px;
+                /* border: 2px solid lightgray;
+                border-top: 0px; */
+                border-right: 2px solid lightgray;
             }
 
 
 
-            .vertical-line{
+            .vertical-line {
                 border-left: 2px solid lightgray;
                 
             }
@@ -886,9 +899,10 @@ nav svg{
             .button-primary, #cancel{
                 width: 45%;
             }
+          
 
     }
-}
+
 
 
 
