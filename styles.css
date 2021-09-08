@@ -787,11 +787,7 @@ nav svg{
                 margin-left: 0;
             } */
 
-            .date{
-                position: unset;
-                
-            }
-
+         
             .new-member-line{
                 margin-top: .5em;
                 margin-right: 1em;
@@ -809,7 +805,8 @@ nav svg{
 
             p.date{
                 margin: 0;
-                text-align: right;
+                right: unset;
+                margin-left: 39%;
             }
 
             /* #db{
