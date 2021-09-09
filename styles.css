@@ -794,7 +794,8 @@ nav svg{
             }
 
             .last-new-member-line{
-                margin-top: .5em;
+                
+                border-top: none;
 
             }
 
@@ -886,7 +887,7 @@ nav svg{
             }
 
             #timezone{
-                width: 90%;
+                width: 95%;
             }
 
             .settings-button{
