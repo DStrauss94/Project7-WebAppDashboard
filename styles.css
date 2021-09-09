@@ -601,8 +601,8 @@ nav svg{
         }
 
         .social-container{
-            width: 30%;
-            margin-left: 1em;
+            width: 32%;
+            margin-left: .6em;
             margin-right: 0;
             
         }
@@ -666,9 +666,6 @@ nav svg{
         .all-social-containers{
             display: flex;
             
-        }
-        .social-container{
-            margin-right: 0;
         }
 
         .social-text .follows{
@@ -746,6 +743,10 @@ nav svg{
             .bell{
                 margin-left: 70%;
             }
+
+            .alert-banner{
+                width: 95%;
+            }
             
             .members, .last-section{
                 display: flex;
@@ -778,15 +779,7 @@ nav svg{
                 margin-top: 0;
             }
 
-            #recentH3{
-                /* margin: .35em 0 0 0; */
-                
-            }
-
-            /* .profile-image{
-                margin-left: 0;
-            } */
-
+    
          
             .new-member-line{
                 margin-top: .5em;
@@ -810,25 +803,6 @@ nav svg{
                 margin-left: 39%;
             }
 
-            /* #db{
-                padding-left: 7.3em;
-            }
-            #dw{
-                padding-left: 6.3em;
-            }
-            #do{
-                padding-left: 6.7em;
-            } */
-
-            /* .bottom-section{
-                border: 2px solid lightgray;
-
-            } */
-
-            .all-social-containers{
-                margin-bottom: 1em;
-            }
-
             .members >  .members-container , .recent-activity{
                 width: 50%;
                 flex-shrink: 0 ;
@@ -842,14 +816,6 @@ nav svg{
                 border-right: 2px solid lightgray;
 
             }
-
-            .recent-activity{
-                /* border: 2px solid lightgray;
-                border-top: 0px;
-                border-bottom: 0px;
-                border-right: 0px; */
-            }
-
                   
 
             .last-section > .message , .settings{
@@ -858,8 +824,6 @@ nav svg{
             }
 
             .message{
-                /* border: 2px solid lightgray;
-                border-top: 0px; */
                 border-right: 2px solid lightgray;
             }
 
