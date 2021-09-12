@@ -537,7 +537,7 @@ nav svg{
         /* Alert Banner */
 
         .alert-banner{
-            width:90%;
+            width:95%;
         }
 
 
@@ -598,6 +598,8 @@ nav svg{
             display: flex;
             flex-direction: row;
             margin: 0;
+            margin-right: .6em;
+            
         }
 
         .social-container{
@@ -640,11 +642,12 @@ nav svg{
            
 
         }
-/* 
-        .mobileUsers h3{
-            margin-bottom: 0;
-        } */
 
+
+        
+        #first-member-line{
+            margin-top: 0;
+        }
         
         .chart-container{
             width: 85%;
@@ -774,12 +777,9 @@ nav svg{
                 flex-basis: 50%;
             }
          
-
-            #first-member-line{
-                margin-top: 0;
+            #recentH3{
+                margin-top: .32em;
             }
-
-    
          
             .new-member-line{
                 margin-top: .5em;
@@ -789,6 +789,7 @@ nav svg{
             .last-new-member-line{
                 
                 border-top: none;
+                margin: 0;
 
             }
 
@@ -815,6 +816,10 @@ nav svg{
             .new-members-container{
                 border-right: 2px solid lightgray;
 
+            }
+
+            .social-container{
+                margin-right: 0;
             }
                   
 
