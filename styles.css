@@ -241,6 +241,11 @@ nav svg{
 .daily-chart-wrapper{
     width: 95vw;
 }
+.daily-chart{
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 1em;
+}
+
 
 /* MOBILE CHART CSS ///////////////////////*/
 
@@ -553,6 +558,7 @@ nav svg{
 
         .alert-banner{
             width:95%;
+            margin-bottom: 1em;
         }
 
 
@@ -595,6 +601,7 @@ nav svg{
         }
         .daily-chart{
             border-right: 2px solid lightgray;
+            border-bottom: none;
         }
         
 
