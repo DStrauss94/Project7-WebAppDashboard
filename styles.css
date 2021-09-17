@@ -781,10 +781,26 @@ nav svg{
             .alert-banner{
                 width: 95%;
             }
+
+            .widget-container-full{
+                margin-top: 1em;
+            }
             
             .members, .last-section{
                 display: flex;
                 
+            }
+
+            #below-traffic-line{
+                margin-top: 1.5em;
+            }
+
+            .traffic-label h3{
+                margin-top: 0;
+            }
+
+            .traffic-nav{
+                padding-left: 66%;
             }
 
             .last-section{
